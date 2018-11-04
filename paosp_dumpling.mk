@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
 # Inherit some common arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/paosp/config/common.mk)
 
-PRODUCT_NAME := arrow_dumpling
+PRODUCT_NAME := paosp_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -43,3 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := OnePlus/OnePlus5T/OnePlus5T:8.1.0/OPM1.171019.011/06131716:user/release-keys
 
 TARGET_VENDOR := oneplus
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.paosp.maintainer=p8t
+	
