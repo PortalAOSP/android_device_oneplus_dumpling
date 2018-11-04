@@ -45,5 +45,6 @@ BUILD_FINGERPRINT := OnePlus/OnePlus5T/OnePlus5T:8.1.0/OPM1.171019.011/06131716:
 TARGET_VENDOR := oneplus
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.paosp.maintainer=p8t
+    ro.paosp.maintainer=p8tgames
+    
 	
